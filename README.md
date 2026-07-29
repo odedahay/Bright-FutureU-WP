@@ -1,4 +1,4 @@
-# Bright-FutureU-WP
+# WP Theme - Bright FutureU Website
 
 ![Bright Future U WordPress theme screenshot](git-screenshot.jpg)
 

@@ -14,3 +14,7 @@
 /index.php
 # Uploads
 /uploads/
+
+
+/themes/.DS_Store
+.DS_Store

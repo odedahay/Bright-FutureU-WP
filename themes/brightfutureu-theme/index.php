@@ -1,6 +1,25 @@
 <?php get_header(); ?>
 
 <main>
+    <section class="hero home-hero" style="--hero-image: url('<?php echo esc_url(get_theme_file_uri('/assets/header.png')); ?>');">
+        <div class="hero-copy">
+            <h1>Helping Little Minds <span>Grow With Confidence</span></h1>
+            <p>Nurturing, play-based learning in a safe and caring environment for infants, toddlers, preschool and
+                kindergarten children in Calgary.</p>
+            <div class="hero-actions">
+                <a class="button" href="#tour">Book a Tour</a>
+                <a class="button button-outline" href="#programs">View Programs</a>
+            </div>
+            <div class="award">
+                <img src="<?php echo esc_url(get_theme_file_uri('/assets/award.png')); ?>" alt="Consumer Choice Award 2026" />
+                <div>
+                    <strong>Consumer Choice Award 2026</strong>
+                    <span>Southern Alberta</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="section-brand" aria-label="Program highlights">
         <div class="brand-item">
             <span><img src="<?php echo get_theme_file_uri('/assets/icon-care.svg') ?>" alt="" /></span>

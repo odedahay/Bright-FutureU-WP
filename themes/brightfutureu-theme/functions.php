@@ -9,6 +9,12 @@ function brightfutureu_files(){
 
 add_action('wp_enqueue_scripts', 'brightfutureu_files');
 
+function brightfuture_features(){
+    add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'brightfuture_features');
+
 function brightfutureu_resource_hints($urls, $relation_type){
     if ('preconnect' === $relation_type) {
         $urls[] = 'https://fonts.googleapis.com';

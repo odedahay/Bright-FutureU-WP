@@ -7,15 +7,9 @@
 
 <body>
 
-  <header class="site-header" id="home" style="background-image:
-    linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.98) 0 39%,
-      rgba(255, 255, 255, 0.73) 50%,
-      rgba(255, 255, 255, 0) 72%
-    ), url(<?php echo get_theme_file_uri('assets/header.png'); ?>">
+  <header class="site-header" id="home">
     <nav class="main-nav" aria-label="Primary navigation">
-      <a class="logo" href="#home" aria-label="Bright Future U home">
+      <a class="logo" href="<?php echo site_url(); ?>" aria-label="Bright Future U">
         <img src="<?php echo get_theme_file_uri('/assets/logo.png'); ?>" alt="Bright Future U" />
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
@@ -23,8 +17,8 @@
         <span class="sr-only">Menu</span>
       </button>
       <div class="nav-links" id="primary-menu">
-        <a href="#home">Home</a>
-        <a href="about-us.html">About Us</a>
+        <a href="<?php echo site_url(); ?>">Home</a>
+        <a href="<?php echo site_url('/about-us'); ?>">About Us</a>
 
         <div class="nav-dropdown">
           <a class="nav-dropdown-trigger" href="#programs" aria-haspopup="true" aria-expanded="false">Programs <i
@@ -51,22 +45,4 @@
       </div>
     </nav>
 
-    <section class="hero">
-      <div class="hero-copy">
-        <h1>Helping Little Minds <span>Grow With Confidence</span></h1>
-        <p>Nurturing, play-based learning in a safe and caring environment for infants, toddlers, preschool and
-          kindergarten children in Calgary.</p>
-        <div class="hero-actions">
-          <a class="button" href="#tour">Book a Tour</a>
-          <a class="button button-outline" href="#programs">View Programs</a>
-        </div>
-        <div class="award">
-          <img src="<?php echo get_theme_file_uri('/assets/award.png'); ?>" alt="Consumer Choice Award 2026" />
-          <div>
-            <strong>Consumer Choice Award 2026</strong>
-            <span>Southern Alberta</span>
-          </div>
-        </div>
-      </div>
-    </section>
   </header>

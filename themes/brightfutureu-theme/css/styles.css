@@ -1765,6 +1765,15 @@ section.book-tour-page{
   font-size: 0.8125rem;
   line-height: 1.4;
 }
+.book-tour-contact-form {
+  min-width: 0;
+}
+.book-tour-contact-form .bfu-contact-form {
+  max-width: none;
+}
+.book-tour-contact-form > :last-child {
+  margin-bottom: 0;
+}
 .book-tour-form {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2863,6 +2872,77 @@ section.program-hero {
   align-items: center;
 }
 
+// Contact Form 
+
+.bfu-contact-form {
+  max-width: 760px;
+}
+
+.bfu-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 32px;
+}
+
+.bfu-contact-form label {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2b2b2b;
+}
+
+.bfu-contact-form input,
+.bfu-contact-form select,
+.bfu-contact-form textarea {
+  width: 100%;
+  margin-top: 7px;
+  padding: 13px 16px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.bfu-contact-form textarea {
+  min-height: 84px;
+  resize: vertical;
+}
+
+.bfu-full {
+  display: block;
+  margin-top: 22px;
+}
+
+.bfu-half {
+  display: block;
+  width: calc(50% - 16px);
+  margin-top: 22px;
+}
+
+.bfu-contact-form .required {
+  color: #d63638;
+}
+
+.bfu-contact-form input[type="submit"] {
+  margin-top: 24px;
+  width: auto;
+  background: #1f4fff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .bfu-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bfu-half {
+    width: 100%;
+  }
+}
+
+
 @media (max-width: 1100px) {
   .about-page .two-col,
   .vision-grid,
@@ -3069,7 +3149,7 @@ section.program-hero {
   .book-tour-hero {
   overflow: hidden;
   background: #fff;
-}
+  }
   .book-tour-hero-grid {
     height: auto;
     grid-template-columns: 1fr;

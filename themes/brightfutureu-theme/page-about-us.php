@@ -31,7 +31,8 @@
                     <p class="about-intro-copy">At Bright Future U Early Learning Academy, we offer high-quality early education
                         and care for children ages 1 to 6.</p>
                 </div>
-                <img class="about-rounded-media" src="<?php echo esc_url(get_theme_file_uri('/assets/about-intro.png')); ?>" alt="Child smiling in a yellow toy car" />
+                <img class="about-rounded-media" src="<?php echo esc_url(get_theme_file_uri('/assets/about-intro.png')); ?>" 
+                alt="Child smiling in a yellow toy car" />
             </div>
         </section>
 
@@ -40,7 +41,7 @@
                 <p class="eyebrow">About Bright Future U</p>
                 <h2 class="about-hero-title">Building Brighter Futures <span>Together</span></h2>
                 <div class="about-story-grid">
-                    <img class="about-story-image" src="<?php echo esc_url(get_theme_file_uri('assets/about-story.png')); ?>"
+                    <img class="about-story-image" src="<?php echo esc_url(get_theme_file_uri('/assets/about-story.png')); ?>"
                         alt="Teacher guiding children as they play with colorful blocks" />
                     <div class="about-story-copy">
                         <p>Bright Future U Early Learning Academy is a Christian-based quality childcare center located in the heart

@@ -25,10 +25,10 @@
               class="ri-arrow-drop-down-line" aria-hidden="true"></i></a>
 
           <div class="nav-dropdown-menu" aria-label="Programs submenu">
-            <a href="program-infant.html">Infant</a>
-            <a href="program-toddler.html">Toddler</a>
-            <a href="program-preschool.html">Preschool</a>
-            <a href="program-kindergarten.html">Kindergarten</a>
+            <a href="<?php echo site_url('/programs/infant'); ?>">Infant</a>
+            <a href="<?php echo site_url('/programs/toddler'); ?>">Toddler</a>
+            <a href="<?php echo site_url('/programs/preschool'); ?>">Preschool</a>
+            <a href="<?php echo site_url('/programs/kindergarten'); ?>">Kindergarten</a>
           </div>
         </div>
         <div class="nav-dropdown">
@@ -41,7 +41,7 @@
           </div>
         </div>
 
-        <a class="button button-small" href="book-a-tour.html">Book a Tour</a>
+        <a class="button button-small" href="<?php echo site_url('/book-a-tour'); ?>">Book a Tour</a>
       </div>
     </nav>
 

@@ -3,6 +3,13 @@ const navLinks = document.querySelector(".nav-links");
 const mainNav = document.querySelector(".main-nav");
 const mobileNavQuery = window.matchMedia("(max-width: 1100px)");
 
+document.addEventListener("wpcf7mailsent", (event) => {
+  const formContainer = event.target.closest(".book-tour-contact-form[data-success-redirect]");
+  if (formContainer) {
+    window.location.assign(formContainer.dataset.successRedirect);
+  }
+});
+
 document.querySelectorAll("[data-current-year]").forEach((year) => {
   year.textContent = new Date().getFullYear();
 });

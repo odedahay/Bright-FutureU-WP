@@ -61,7 +61,11 @@ while (have_posts()) {
                                 visit.</p>
                         </header>
 
-                        <div class="book-tour-contact-form">
+                        <?php
+                        $thank_you_page = get_page_by_path('book-a-tour/thank-you');
+                        $thank_you_url = $thank_you_page ? get_permalink($thank_you_page) : home_url('/book-a-tour/thank-you/');
+                        ?>
+                        <div class="book-tour-contact-form" data-success-redirect="<?php echo esc_url($thank_you_url); ?>">
                             <?php
                             $contact_form_page = get_page_by_path('contact-form') ?: get_page_by_path('contact-us') ?: get_page_by_path('contact');
 
@@ -102,9 +106,9 @@ while (have_posts()) {
                             <a href="tel:8254384482">
                                 <i class="ri-smartphone-line" aria-hidden="true"></i>
                                 (825) 438-4482</a>
-                            <a href="mailto:hello@brightfutureu.com">
+                            <a href="mailto:hello@bfuacademy.ca">
                                 <i class="ri-mail-line" aria-hidden="true"></i>
-                                hello@brightfutureu.com
+                                hello@bfuacademy.ca
                             </a>
                         </div>
                         <div class="book-tour-sun" aria-hidden="true">

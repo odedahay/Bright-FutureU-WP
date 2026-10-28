@@ -30,8 +30,8 @@
                   <h3>Connect</h3>
                   <a href="tel:8254384482">
                       <i class="ri-smartphone-line"></i> (825) 438-4482</a>
-                  <a href="mailto:hello@brightfutureu.com">
-                      <i class="ri-mail-line"></i> hello@brightfutureu.com</a>
+                  <a href="mailto:hello@bfuacademy.ca">
+                      <i class="ri-mail-line"></i> hello@bfuacademy.ca</a>
                   <p><i class="ri-map-pin-line"></i> 505 4th Ave SW, Calgary, AB T2P 0J8, Canada</p>
                   <p><i class="ri-calendar-line"></i> Monday - Friday<br />
                       <i class="ri-time-line"></i> 06:30 a.m. - 06:00 p.m.

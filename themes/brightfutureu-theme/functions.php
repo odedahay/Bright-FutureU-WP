@@ -1,7 +1,7 @@
 <?php
 
 function brightfutureu_files(){
-    wp_enqueue_script('brightfuture_main_js', get_theme_file_uri('/js/script.js'), NULL, '1.0', true);
+    wp_enqueue_script('brightfuture_main_js', get_theme_file_uri('/js/script.js'), NULL, filemtime(get_theme_file_path('/js/script.js')), true);
     wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&amp;family=Nunito:wght@400;500;600;700&amp;display=swap');
     wp_enqueue_style('remixicon', get_theme_file_uri('/css/remixicon/remixicon.css'));
     wp_enqueue_style( 'brightfuture_main_styles',  get_theme_file_uri('/css/styles.css'));
